@@ -1,16 +1,14 @@
-{
-  "name": "dijoo-panel-api",
+"name": "dijoo-deploy-panel",
   "version": "1.0.0",
-  "description": "API for Dijoo Reseller Panel using Express and Vercel",
-  "main": "api/deploy.js",
+  "private": true,
   "scripts": {
-    "start": "node api/deploy.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "node-fetch": "^2.6.12"
-  },
-  "engines": {
-    "node": "18.x"
+    "next": "14.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   }
 }
