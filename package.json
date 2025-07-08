@@ -1,25 +1,24 @@
 {
-  "name": "your-app-name",
+  "name": "dijo-deploy-panel",
   "version": "1.0.0",
-  "description": "A Next.js application for managing user panels and server allocations.",
-  "main": "index.js",
+  "description": "A simple application for managing reseller panels.",
+  "main": "api/deploy.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "start": "node api/deploy.js",
+    "dev": "nodemon api/deploy.js"
   },
   "dependencies": {
     "express": "^4.17.1",
-    "node-fetch": "^2.6.1",
-    "next": "^12.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.7"
+    "node-fetch": "^2.6.1"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": "14.x"
   },
+  "keywords": [
+    "reseller",
+    "panel",
+    "api"
+  ],
+  "author": "Dijoo",
   "license": "MIT"
 }
